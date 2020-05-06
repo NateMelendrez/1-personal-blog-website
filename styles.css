@@ -1,0 +1,258 @@
+
+/*Top Navigation*/
+.topnav{
+    grid-area:tn;
+    background-color: black;
+    padding: 3px;
+    
+  }
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.name {
+  display: block;
+  margin-right: auto;
+  color: white;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+  color: white
+}
+.nav a:hover {
+  color: rgb(204, 162, 26)
+}
+
+/*Header*/
+  
+header {
+  grid-area:hd;
+  text-align: center;
+  background: url("images/manila.jpg");
+  background-size: cover;
+  overflow: hidden;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-position: center;
+  line-height: 1.5;
+  border-bottom: 10px solid rgb(114, 108, 108);
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #eee;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+.tag {
+  background-color: rgb(75, 75, 75);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}   
+
+/*Content*/
+  .side{
+    grid-area: sd;
+    border: 1px solid #eee;
+    text-align: justify;
+    padding: 30px;
+  }
+  .main{
+    grid-area: main;
+    border: 1px solid #eee;
+    text-align: justify;
+    padding: 30px;
+  }
+
+/* Footer */
+
+  footer{
+    grid-area: ft;  
+    padding: 30px 0 40px 20px;
+    text-align: center;
+    background: rgb(231, 177, 76);
+  }
+
+  footer .copyright {
+    top: -8px;
+    font-size: .75em;
+  }
+
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+  }
+
+  a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s;
+  }
+  a.twitter {
+    background-image: url(images/svg/twitter.svg);
+  }
+  a.facebook {
+    background-image: url(images/svg/facebook.svg);
+  }
+  a.youtube {
+    background-image: url(images/svg/youtube.svg);
+  }
+  a.soundcloud {
+    background-image: url(images/svg/soundcloud.svg);
+  }
+  a.linkedin {
+    background-image: url(images/svg/linkedin.svg);
+  }
+  a.github {
+    background-image: url(images/svg/github.svg);
+  }
+  a.social:hover {
+    opacity: 1;
+  }
+  .clearfix {
+    clear: both;
+  }
+
+
+/* Container Home */
+@media(min-width:900px){
+  .container-home{
+    display:grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "tn tn tn tn tn tn tn tn"
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main sd sd"
+    "ft ft ft ft ft ft ft ft";
+  }
+}
+.container{
+  display:grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 250px 600px;
+  grid-template-areas: 
+  "hd"
+  "sd"
+  "main"
+  "ft";
+  border: 2px;
+}
+  
+#nestedGird {
+  display: flex;
+  border: 1px solid rgb(24, 75, 126);;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contactbox {
+  padding-top: 1px;
+  padding-left: 5px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: rgb(24, 75, 126);
+  border-width: 2px;
+  transition: all .5s;
+}  
+
+/* Experience */
+
+#exp-header {
+  grid-area:hd;
+  text-align: center;
+  background: url("images/cover/expheader.jpg");
+  background-size: cover;
+  overflow: hidden;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-position: center;
+  line-height: 1.5;
+}
+
+@media(min-width:900px){
+.container-exp{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "tn tn tn tn tn tn tn tn"
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    border: 2px solid rgb(24, 75, 126);;
+  }
+}
+
+.expbox {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: rgb(24, 75, 126);
+  border-width: 2px;
+  transition: all .5s;
+}
+
+/* Hobbies */
+#hobbies-header {
+  grid-area:hd;
+  text-align: center;
+  background: url("images/hobbies/hobbies-header.jpg");
+  background-size: cover;
+  overflow: hidden;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-position: center;
+  line-height: 1.5;
+}
+
+@media(min-width:900px){
+  .container-hobbies{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "tn tn tn tn tn tn tn tn"
+    "hd hd hd hd hd hd hd hd"
+    "main main main main sd sd sd sd"
+    "ft ft ft ft ft ft ft ft";
+    border: 2px solid #eee;
+  }
+}
