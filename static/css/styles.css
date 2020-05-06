@@ -1,0 +1,31 @@
+
+/*Top Navigation*/
+@import "navigation.css";
+
+/*Header*/
+  
+@import "header.css";
+
+/* Container Home */
+@import "container.css";
+
+/* Footer */
+
+@import "footer.css";
+
+/*Content*/
+  .side{
+    grid-area: sd;
+    border: 1px solid #eee;
+    text-align: justify;
+    padding: 30px;
+  }
+  .main{
+    grid-area: main;
+    border: 1px solid #eee;
+    text-align: justify;
+    padding: 30px;
+  }
+
+
+

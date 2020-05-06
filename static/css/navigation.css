@@ -1,0 +1,29 @@
+.topnav{
+    grid-area:tn;
+    background-color: black;
+    padding: 3px;
+    
+  }
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.name {
+  display: block;
+  margin-right: auto;
+  color: white;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+  color: white
+}
+.nav a:hover {
+  color: rgb(204, 162, 26)
+}
