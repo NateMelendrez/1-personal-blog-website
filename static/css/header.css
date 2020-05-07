@@ -29,4 +29,5 @@ header {
     border-radius: 5px;
     display: table;
     margin: 10px auto;
+    text-decoration: underline;
   }   
