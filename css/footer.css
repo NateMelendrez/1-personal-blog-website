@@ -31,22 +31,22 @@ footer{
     transition: all .5s;
   }
   a.twitter {
-    background-image: url(../../images/svg/twitter.svg);
+    background-image: url(../images/svg/twitter.svg);
   }
   a.facebook {
-    background-image: url(../../images/svg/facebook.svg);
+    background-image: url(../images/svg/facebook.svg);
   }
   a.youtube {
-    background-image: url(../../images/svg/youtube.svg);
+    background-image: url(../images/svg/youtube.svg);
   }
   a.soundcloud {
-    background-image: url(../../images/svg/soundcloud.svg);
+    background-image: url(../images/svg/soundcloud.svg);
   }
   a.linkedin {
-    background-image: url(../../images/svg/linkedin.svg);
+    background-image: url(../images/svg/linkedin.svg);
   }
   a.github {
-    background-image: url(../../images/svg/github.svg);
+    background-image: url(../images/svg/github.svg);
   }
   a.social:hover {
     opacity: 1;

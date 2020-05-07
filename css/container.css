@@ -48,7 +48,7 @@
   #exp-header {
     grid-area:hd;
     text-align: center;
-    background: url("../../images/cover/expheader.jpg");
+    background: url("../images/cover/expheader.jpg");
     background-size: cover;
     overflow: hidden;
     image-rendering: auto;
@@ -91,7 +91,7 @@
   #hobbies-header {
     grid-area:hd;
     text-align: center;
-    background: url("../../images/hobbies/hobbies-header.jpg");
+    background: url("../images/hobbies/hobbies-header.jpg");
     background-size: cover;
     overflow: hidden;
     image-rendering: auto;
